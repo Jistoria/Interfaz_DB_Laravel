@@ -1,0 +1,70 @@
+<div class="container">
+      <label for="busqueda">Buscar producto:</label>
+      <div class="search-bar">
+
+        <input type="text" id="busqueda" oninput="filtrarProductos()" placeholder="Ingresa tu búsqueda">
+      </div>
+      <label for="filtroPrecio">Filtro de precio:</label>
+      <select id="filtroPrecio" onchange="filtrarProductos()">
+        <option value="todos">Todos</option>
+        <option value="menor200">Menor de 200</option>
+        <option value="menor500">Menor a 500</option>
+        <option value="mayor500">Mayor a 500</option>
+      </select>
+      <div class="espacio"></div>
+      <div class="productos">
+        <div class="producto">
+          <img src="img/alfombra spider.jpg" alt="Producto 2" style="width: 200px; height: 200px;">
+          <h2>Alfombra ValoTech Classic </h2>
+          <p>$100</p>
+          <p class="descripcion">Alfrombra clasica para mouse.</p>
+          <button onclick="agregarAlCarrito('Producto 2', 200)">Agregar al carrito</button>
+        </div>
+      </div>
+
+        <div class="carrito">
+          <h2>Carrito de compras</h2>
+          <div class="carrito">
+            <ul id="lista-carrito">
+              <!-- Aquí se mostrarán los productos agregados al carrito -->
+            </ul>
+            <p>Total: $<span id="total-carrito">0</span></p>
+            <button onclick="vaciarCarrito()">Vaciar carrito</button>
+            <button onclick="realizarCompra()">Realizar compra</button>
+          </div>
+        </div>
+
+
+
+      <div class="espacio"></div>
+
+
+      <div class="center">
+        <h2>Productos Futuros</h2>
+      </div>
+
+      <div class="productos-futuros">
+
+
+        <div class="producto-futuro">
+          <img src="img/rtx.jpg" alt="Nombre del producto futuro" style="width: 250px; height: 280px;">
+          <h3>Geforce RTX 4090</h3>
+        </div>
+        <div class="producto-futuro">
+          <img src="img/audifono 1.jpg" alt="Nombre del producto futuro" style="width: 250px; height: 280px;">
+          <h3>Audifonos ValoTech</h3>
+        </div>
+        <div class="producto-futuro">
+          <img src="img/case powerranger.jpg" alt="Nombre del producto futuro" style="width: 250px; height: 280px;">
+          <h3>Case PowerRanger ValoTech</h3>
+        </div>
+        <div class="producto-futuro">
+          <img src="img/monitor.jpg" alt="Nombre del producto futuro" style="width: 250px; height: 280px;">
+          <h3>Monitor 144hz ROG</h3>
+        </div>
+        <div class="producto-futuro">
+          <img src="img/silla.jpg" alt="Nombre del producto futuro">
+          <h3>Silla Gamer MICRO</h3>
+        </div>
+      </div>
+    </div>
